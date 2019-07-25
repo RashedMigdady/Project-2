@@ -1,6 +1,20 @@
-var data ={name:"rashed" , password:"123"};
+var data =[{name:"rashed" , password:"123"},{name:"ali" , password:"456"}]
 var d =["/","*","+","-","$","#","&","!","%"]
+var object = {};
 
+     var u = document.getElementById("username");
+     var p = document.getElementById("pw");
+     for ( var x = 0 ; x < data.length ; x++ )
+     {
+        if (u.value === data[x].name && p.value === data[x].password )
+        {
+            object.key = data[x].name ;
+            object.key = data[x].password;
+
+        }
+     }
+          
+     
 
  function clicked ()
  {
